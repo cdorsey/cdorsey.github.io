@@ -16,6 +16,7 @@
 
 .row {
   height: 50%;
+  margin: 0;
 }
 
 .card {
