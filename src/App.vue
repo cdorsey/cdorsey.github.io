@@ -12,6 +12,12 @@
 
 .container {
   height: 100%;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
 }
 
 .card {

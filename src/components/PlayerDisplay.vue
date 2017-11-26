@@ -52,14 +52,6 @@ h1 {
     opacity: 0.45;
 }
 
-.increase > h2, .decrease > h2 {
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    -webkit-touch-callout: none;
-}
-
 .decrease {
     transform: rotate(180deg);
 }
