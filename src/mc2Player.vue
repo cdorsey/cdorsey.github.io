@@ -2,10 +2,10 @@
 <div class="container">
   <div class="row">
     <div class="col s6">
-      <mc-player-display id="player1" class="card blue valign-wrapper" rotated></mc-player-display>
+      <mc-player-display id="player1" class="card blue valign-wrapper"></mc-player-display>
     </div>
     <div class="col s6"
-      <mc-player-display id="player2" class="card blue valign-wrapper" rotated></mc-player-display>
+      <mc-player-display id="player2" class="card blue valign-wrapper"></mc-player-display>
     </div>
     </div>
   </div>
