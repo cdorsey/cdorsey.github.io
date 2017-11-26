@@ -45,6 +45,7 @@ h1 {
 }
 
 .increase, .decrease {
+    height: 100%;
     flex-grow: 1;
     color: white;
     margin: auto;
