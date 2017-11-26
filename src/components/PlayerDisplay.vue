@@ -52,9 +52,9 @@ h1 {
     opacity: 0.45;
 
     user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
+    /* -moz-user-select: none; */
+    /* -webkit-user-select: none; */
+    /* -ms-user-select: none; */
     -webkit-touch-callout: none;
 }
 
