@@ -28,8 +28,8 @@ import $ from 'jquery'
 import { fill } from 'lodash'
 
 $(document).ready(function () {
-  $('#app').fullpage()
-})
+  $('#app').fullpage();
+});
 
 export default {
   name: 'app',
