@@ -4,8 +4,8 @@
             <h1 class="center-align">{{ value }}</h1>
         </div>
         <div class="card-controls" :class="{ 'card-controls-rotate': rotated }">
-            <a href="#" class="increase" @click="value++"><h2>+</h2></a>
-            <a href="#" class="decrease" @click="value--"><h2>-</h2></a>
+            <a href="#" class="increase" @click="value++" v-touch:tap="value++"><h2>+</h2></a>
+            <a href="#" class="decrease" @click="value--" v-touch:tap="value--"><h2>-</h2></a>
         </div>
     </div>
 </template>
