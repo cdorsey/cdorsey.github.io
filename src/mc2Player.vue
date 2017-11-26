@@ -19,7 +19,7 @@
 }
 
 .card {
-  height: 90%
+  height: 90%;
 }
 
 #player2 {
