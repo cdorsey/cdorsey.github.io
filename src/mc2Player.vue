@@ -23,7 +23,7 @@
   height: 90%;
 }
 
-#player2 {
+#player1 {
   transform: rotate(180deg);
 }
 </style>
