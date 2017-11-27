@@ -46,7 +46,7 @@ export default {
   },
   data () {
     return {
-      numPlayers: 2,
+      numPlayers: 4,
     }
   },
 }

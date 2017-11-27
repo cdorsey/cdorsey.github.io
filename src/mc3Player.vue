@@ -30,11 +30,12 @@
     height: 50%;
 }
 
-#player2 {
+#player1 {
     transform: rotate(180deg);
 }
 
 #player3 {
+    transform: rotate(180deg);
     margin-bottom: 0;
 }
 </style>

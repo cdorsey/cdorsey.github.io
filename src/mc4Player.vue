@@ -20,9 +20,19 @@
 </template>
 
 <style scoped>
+.row {
+  height: 50%;
+}
 
+.col {
+  height: 90%;
+}
 
-#player3, #player4 {
+.col > * {
+  height: 100%;
+}
+
+#player1, #player2 {
   transform: rotate(180deg);
 }
 </style>
