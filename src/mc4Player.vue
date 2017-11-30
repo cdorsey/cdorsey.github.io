@@ -1,9 +1,9 @@
 <template>
 <div class="container">
-  <mc-player-display id="player1" rotated></mc-player-display>
-  <mc-player-display id="player2" rotated></mc-player-display>
-  <mc-player-display id="player3" rotated></mc-player-display>
-  <mc-player-display id="player4" rotated></mc-player-display>
+    <mc-player-display id="player1" rotated></mc-player-display>
+    <mc-player-display id="player2" rotated></mc-player-display>
+    <mc-player-display id="player3" rotated></mc-player-display>
+    <mc-player-display id="player4" rotated></mc-player-display>
 </div>
 </template>
 
