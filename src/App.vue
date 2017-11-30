@@ -1,16 +1,21 @@
 <template>
 <div id="app">
   <mc-2-player v-if="numPlayers === 2" :numPlayers="numPlayers"></mc-2-player>
-  <mc-3-player v-else-if="numPlayers === 3" :numPlayers="numPlayers"></mc-3-player>
-  <mc-4-player v-else-if="numPlayers === 4" :numPlayers="numPlayers"></mc-4-player>
+  <!-- <mc-3-player v-else-if="numPlayers === 3" :numPlayers="numPlayers"></mc-3-player> -->
+  <!-- <mc-4-player v-else-if="numPlayers === 4" :numPlayers="numPlayers"></mc-4-player> -->
 </div>
 </template>
 
 <style>
-@import url('../node_modules/fullpage.js/dist/jquery.fullpage.css');
-@import url('../node_modules/materialize-css/dist/css/materialize.css');
+@import url('../node_modules/normalize.css/normalize.css');
+@import url('https://fontlibrary.org/face/ferrum');
 
-.container {
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#app {
   height: 100%;
 
   user-select: none;
@@ -20,9 +25,10 @@
   -webkit-touch-callout: none;
 }
 
-.card {
-    border-radius: 2em;
+.container {
+  height: 100%;
 }
+
 </style>
 
 
@@ -33,10 +39,6 @@ import mc4Player from './mc4Player.vue'
 import $ from 'jquery'
 import { fill } from 'lodash'
 
-$(document).ready(function () {
-  $('#app').fullpage();
-});
-
 export default {
   name: 'app',
   components: {
@@ -46,7 +48,7 @@ export default {
   },
   data () {
     return {
-      numPlayers: 4,
+      numPlayers: 2,
     }
   },
 }

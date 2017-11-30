@@ -1,26 +1,23 @@
 <template>
 <div class="container">
-    <div class="row">
-      <mc-player-display id="player1" class="card blue valign-wrapper"></mc-player-display>
-    </div>
-    <div class="row">
-      <mc-player-display id="player2" class="card blue valign-wrapper"></mc-player-display>
-    </div>
+  <mc-player-display id="player1"></mc-player-display>
+  <mc-player-display id="player2"></mc-player-display>
 </div>
 </template>
 
 <style scoped>
 .container {
   height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 2vh;
 }
 
-.row {
-  height: 50%;
-  margin: 0;
-}
-
-.card {
-  height: 90%;
+#player1, #player2 {
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 #player1 {
