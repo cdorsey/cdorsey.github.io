@@ -1,7 +1,7 @@
 <template>
 <div id="app">
   <mc-2-player v-if="numPlayers === 2" :numPlayers="numPlayers"></mc-2-player>
-  <!-- <mc-3-player v-else-if="numPlayers === 3" :numPlayers="numPlayers"></mc-3-player> -->
+  <mc-3-player v-else-if="numPlayers === 3" :numPlayers="numPlayers"></mc-3-player>
   <!-- <mc-4-player v-else-if="numPlayers === 4" :numPlayers="numPlayers"></mc-4-player> -->
 </div>
 </template>
@@ -27,6 +27,8 @@ html, body {
 
 .container {
   height: 100%;
+  display: grid;
+  grid-gap: 2vh;
 }
 
 </style>
@@ -48,7 +50,7 @@ export default {
   },
   data () {
     return {
-      numPlayers: 2,
+      numPlayers: 3,
     }
   },
 }

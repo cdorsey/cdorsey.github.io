@@ -1,8 +1,8 @@
 <template>
 <div class="counter">
-    <h1>{{ value }}</h1>
-    <div class="controls">
-        <v-touch @tap="value--" class="decrease">-</v-touch>
+    <h1 :class="{ 'rotate-text' : rotated }">{{ value }}</h1>
+    <div class="controls" :class="{ 'controls-rotated': rotated }">
+        <v-touch @tap="value--" class="decrease"><span :class="{ 'rotate-text': rotated }">&ndash;</span></v-touch>
         <v-touch @tap="value++" class="increase">+</v-touch>
     </div>
 </div>
@@ -14,6 +14,7 @@ h1 {
     text-align: center;
     color: white;
     font-size: 20rem;
+    font-family: "FerrumExtraCondensed"
 }
 
 .counter {
@@ -40,15 +41,36 @@ h1 {
     grid-template-rows: 1fr;
 }
 
+.controls-rotated {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.rotate-text {
+    transform: rotate(90deg);
+}
+
 .increase, .decrease {
     opacity: 0.45;
     color: white;
     font-size: 5rem;
+    font-weight: 100;
     padding: 2rem;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.controls-rotated > * {
+    flex-direction: row;
+}
+
+.controls-rotated > .increase {
+    align-self: flex-end;
+}
+
+.controls-rotated > .decrease {
+    align-self: flex-start;
 }
 
 .increase {

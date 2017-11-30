@@ -1,42 +1,23 @@
 <template>
-    <div class="container">
-        <div class="row">
-            <div class="col m8 s8">
-                <mc-player-display id="player1" class="card blue valign-wrapper"></mc-player-display>
-                <mc-player-display id="player2" class="card blue valign-wrapper"></mc-player-display>
-            </div>
-            <!-- /.col -->
-            <div class="col m4 s4">
-                <mc-player-display id="player3" class="card blue valign-wrapper" rotated></mc-player-display>
-            </div>
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
+<div class="container">
+    <mc-player-display id="player1" rotated></mc-player-display>
+    <mc-player-display id="player2" rotated></mc-player-display>
+    <mc-player-display id="player3"></mc-player-display>
+</div>
 </template>
 
 <style scoped>
-.row {
-    height: 95%;
+.container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
 }
 
-.col,
-.card {
-    height: 100%;
-}
-
-#player1,
 #player2 {
-    height: 50%;
-}
-
-#player1 {
     transform: rotate(180deg);
 }
 
 #player3 {
-    transform: rotate(180deg);
-    margin-bottom: 0;
+    grid-column: 1 / 3;
 }
 </style>
 
