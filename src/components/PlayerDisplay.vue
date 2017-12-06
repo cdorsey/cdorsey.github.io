@@ -14,7 +14,14 @@ h1 {
     text-align: center;
     color: white;
     font-size: 20rem;
-    font-family: "FerrumExtraCondensed"
+    font-family: "FerrumExtraCondensed";
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .counter {
@@ -90,9 +97,12 @@ export default {
         }
     },
     mounted: function() {
+        // Dynamically size counter text
         let counterDiv = this.$el;
         let counterHeight = counterDiv.clientHeight;
         counterDiv.querySelector('h1').setAttribute('font-size', (counterHeight * 0.90).toString() + 'px');
+
+
     },
     data() {
         return {
