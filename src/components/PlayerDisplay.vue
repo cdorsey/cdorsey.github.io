@@ -89,6 +89,11 @@ export default {
             default: 20
         }
     },
+    mounted: function() {
+        let counterDiv = this.$el;
+        let counterHeight = counterDiv.clientHeight;
+        counterDiv.querySelector('h1').setAttribute('font-size', (counterHeight * 0.90).toString() + 'px');
+    },
     data() {
         return {
             value: this.maxHealth
