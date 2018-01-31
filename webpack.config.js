@@ -36,7 +36,6 @@ module.exports = {
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      'fullpage.css$': 'fullpage.js/dist/jquery.fullpage.css',
     }
   },
   devServer: {
