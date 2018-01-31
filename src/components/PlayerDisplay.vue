@@ -15,13 +15,6 @@ h1 {
     color: white;
     font-size: 20rem;
     font-family: "FerrumExtraCondensed";
-
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 .counter {
@@ -33,6 +26,14 @@ h1 {
     flex-direction: column;
     justify-content: center;
     position: relative;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
 }
 
 .controls {
